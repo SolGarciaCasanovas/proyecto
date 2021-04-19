@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* GENERAL */
+/* Todos los cuerpos */
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+}
+
+/* Cabeceras */
+header {
+    width: 90vw;
+    height: 10vh;
+    content: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 2% 5% 0% 5%;
+}
+
+
+.menu_png {
+    width: 3rem;
+    height: 3rem;
+    display: inline;
+    order: 2;
+    flex-grow: 0;
+}
+
+.logo_colores {
+    width: 10rem;
+    order: 1;
+    flex-grow: 0;
+} 
+
+/* Títulos principales */
+/* tipo: letra en color y centrados */
+.titulos_secciones{
+    font-size: 1.5rem;
+    display: inline;
+    text-align: right;
+    font-family: 'Fjalla One', sans-serif;
+    order: 3;
+    flex-grow: 1;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family:'Merriweather', serif;
+    display: inline;
+}
+
+/* Menúes */
+/* tipo: lista desordenada sin bullets */
+nav{
+    width: 100vw;
+    height:5vh;
+}
+
+nav ul{
+    text-align: center;
+    padding-bottom: 11px;
+}
+
+nav ul li {
+    list-style-type: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 10px;
+}
+
+/* Enlaces de la lista */
+ul li a{
+    text-decoration: none;
+}
+
+/* Mains */
+main {
+    width:100vw;
+    height:85vh;
+/*    overflow-y: scroll;*/
+}
+
+/* tipo: aire en el caja */
+.main_universal {
+    width:100vw;
+    height: 80vh;
+}
+
+/* Artículos */
+article{
+    line-height: 30px;
+    text-align: justify;
+    padding: 2%;
+}
+
+/* Párrafos */
+section article p{
+    font-family:'Roboto', sans-serif;
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+/* Enlaces */
+a {
+    text-decoration: none;
+}
+
+
+/* PIE DE PÁGINA */
+footer{
+    width: 100vw;
+    height: 5vh;
+    color: #7724e4;
+    background-color: #b2c3fc ;
+    letter-spacing: 2px;
+    position: fixed;
+}
+
+/* ________________________________________________________________________________ */
+
+/* SECCIONES */
+
+/*INDEX*/
+/*Íconos de colores*/
+.png_style{
+    display: inline-block;
+    width: 3%;
+    border-radius: 25px;
+    padding: 1%;
+    margin: 2%;
+}
+
+/*.png_style :hover{
+        
+
+    }*/
+
+/* OBRA */
+.logo_registro{
+    font-family:'Merriweather', serif;
+    font-size: 2rem;
+    text-align: left;
+    display: inline;
+    order: 1;
+    flex-grow: 0;
+}
+
+.obra_menu {
+    width: 2.6rem;
+    height: 2.6rem;
+    display: inline-block; 
+    margin: 0% 0% 0% 1%;
+    order: 2;
+    flex-grow: 0;
+}
+
+.titulo_registro{
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    text-align: right;
+    display: inline;
+    order: 3;
+    flex-grow: 1;
+}
+
+#obraFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0% 0.5% 0.5% 0.5%;
+}
+
+.obra_imgs {
+    height: 30rem;
+    width: 30rem;
+    object-fit: cover;
+    padding: 4%;
+}
+
+/* ADAPTACIONES */
+/* Adaptación Desktop */
+@media screen and (max-width: 1500px){
+    body {
+        background-color: #ffffff;
+    }
+}
+
+/* Adaptación Tablet */
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 100%;
+        text-align: left;
+        font-family: 'Fjalla One', sans-serif;
+        padding: 2%;
+    }
+    body {
+        background-color: #ffffff;
+    }
+}
+
+/* Adaptación Celular */
+@media screen and (max-width: 300px){
+    h1{
+    font-size: 50%;
+    text-align: left;
+    font-family: 'Fjalla One', sans-serif;
+    padding: 2%;
+}
+}
+
+/* TODO ESTO CHEQUEAR/REVEER 
+/ Primera página Grids /
+.div_conteiner{
+    display: grid;
+    grid-gap: 3fr;
+    
+}
+
+.carousel-item{
+    width: 10%;
+    padding: 0 10% 0 10%;
+}
+
+/ enlaces /
+a:hover {
+    color: white;
+}
